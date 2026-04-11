@@ -40,10 +40,10 @@ def main():
     parser.add_argument('--use_multi_gpu', type=bool, default=False, help='use multiple gpus')
     parser.add_argument('--gpu', type=int, default=0, help='gpu id')
     
-    parser.add_argument('--ablation_no_cond', action='store_true', help='w/o Cond: 移除显式工况注入')
-    parser.add_argument('--ablation_pl', action='store_true', help='w PL: 采用伪标签自训练代替无监督边缘似然')
-    parser.add_argument('--ablation_no_sn', action='store_true', help='w/o SN: 移除谱归一化约束')
-    parser.add_argument('--ablation_learnable_var', action='store_true', help='Learnable Sigma: 取消方差冻结约束')
+    parser.add_argument('--ablation_no_cond', action='store_true', help='w/o Cond')
+    parser.add_argument('--ablation_pl', action='store_true', help='w/o unsup')
+    parser.add_argument('--ablation_no_sn', action='store_true', help='w/o SN')
+    parser.add_argument('--ablation_learnable_var', action='store_true', help='Learnable Sigma')
 
     args = parser.parse_args()
 
