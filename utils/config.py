@@ -2,7 +2,6 @@ MAFAULDA_CLASSES = [
     'normal',
     'underhang/outer_race', 'underhang/ball_fault', 'underhang/cage_fault',
     'overhang/outer_race', 'overhang/ball_fault', 'overhang/cage_fault' 
-    # 请替换为您数据集中真实的文件夹关键词
 ]
 UOTTAWA_CLASSES = [
     'healthy',
